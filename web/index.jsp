@@ -19,8 +19,11 @@
     </script>
 </head>
 <body>
-<input type="text" name="check_code">
-<img id="address" src="imageServlet" alt="验证码">
-<a href=javascript:reload()>看不清楚</a>
+<form method="post" action="/checkServlet">
+    <input type="text" name="check_code">
+    <img id="address" src="imageServlet" alt="验证码">
+    <a href=javascript:reload()>看不清楚</a>
+    <input type="submit" value="验证">
+</form>
 </body>
 </html>

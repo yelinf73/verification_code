@@ -34,7 +34,7 @@ public class ImageServlet extends HttpServlet {
                     random.nextInt(255),
                     random.nextInt(255)));
             graphics.drawString(chars[index]+"",i*15,18);
-            stringBuffer.append(chars[i]);
+            stringBuffer.append(chars[index]);
         }
         //将字符串保存到session中
         req.getSession().setAttribute("pic_code",stringBuffer.toString());
