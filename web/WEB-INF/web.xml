@@ -19,4 +19,15 @@
         <servlet-name>CheckServlet</servlet-name>
         <url-pattern>/checkServlet</url-pattern>
     </servlet-mapping>
+    <!--谷歌验证码kaptcha-->
+    <servlet>
+        <servlet-name>Kaptcha</servlet-name>
+        <servlet-class>
+            com.google.code.kaptcha.servlet.KaptchaServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Kaptcha</servlet-name>
+        <url-pattern>/randomcode.jpg</url-pattern>
+    </servlet-mapping>
 </web-app>

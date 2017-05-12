@@ -6,6 +6,10 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="verification_code" />
+          <element id="extracted-dir" path="D:/java/kaptcha-2.3.jar" path-in-jar="/" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="kaptcha-2.3" />
         </element>
       </element>
     </root>
