@@ -25,6 +25,44 @@
         <servlet-class>
             com.google.code.kaptcha.servlet.KaptchaServlet
         </servlet-class>
+        <init-param>
+            <param-name>kaptcha.border</param-name>
+            <param-value>yes</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.border.color</param-name>
+            <param-value>blue</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.border.thickness</param-name>
+            <param-value>1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.image.width</param-name>
+            <param-value>400</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.image.height</param-name>
+            <param-value>50</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.textproducer.char.string</param-name>
+            <param-value>1234560</param-value>
+        </init-param>
+        <init-param>
+            <description>验证码长度 5</description>
+            <param-name>kaptcha.textproducer.char.length</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <init-param>
+            <param-name>kaptcha.obscurificator.impl</param-name>
+            <param-value>com.google.code.kaptcha.impl.FishEyeGimpy</param-value>
+        </init-param>
+        <!--实现中文验证码-->
+        <init-param>
+            <param-name>kaptcha.textproducer.impl</param-name>
+            <param-value>ChineseText</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>Kaptcha</servlet-name>
