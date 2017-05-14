@@ -23,7 +23,7 @@
     <servlet>
         <servlet-name>Kaptcha</servlet-name>
         <servlet-class>
-            com.google.code.kaptcha.servlet.KaptchaServlet
+            CalServlet
         </servlet-class>
         <init-param>
             <param-name>kaptcha.border</param-name>
@@ -47,7 +47,7 @@
         </init-param>
         <init-param>
             <param-name>kaptcha.textproducer.char.string</param-name>
-            <param-value>1234560</param-value>
+            <param-value>1234567890</param-value>
         </init-param>
         <init-param>
             <description>验证码长度 5</description>
@@ -59,10 +59,10 @@
             <param-value>com.google.code.kaptcha.impl.FishEyeGimpy</param-value>
         </init-param>
         <!--实现中文验证码-->
-        <init-param>
-            <param-name>kaptcha.textproducer.impl</param-name>
-            <param-value>ChineseText</param-value>
-        </init-param>
+        <!--<init-param>-->
+        <!--<param-name>kaptcha.textproducer.impl</param-name>-->
+        <!--<param-value>ChineseText</param-value>-->
+        <!--</init-param>-->
     </servlet>
     <servlet-mapping>
         <servlet-name>Kaptcha</servlet-name>
